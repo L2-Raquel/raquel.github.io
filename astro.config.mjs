@@ -17,7 +17,7 @@ import alpinejs from "@astrojs/alpinejs";
 
 // https://astro.build/config
 export default defineConfig({
-  site: siteConfig.site,
+  site: raquel.github.io,
   devToolbar: {
     enabled: false
   },
