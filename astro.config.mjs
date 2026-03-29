@@ -1,4 +1,5 @@
 // @ts-check
+import fs from 'node:fs';
 import { visualizer } from "rollup-plugin-visualizer";
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
@@ -17,13 +18,13 @@ import alpinejs from "@astrojs/alpinejs";
 
 // https://astro.build/config
 export default defineConfig({
-  site: raquel.github.io,
+  site: 'https://raquel.github.io',
   devToolbar: {
     enabled: false
   },
   i18n: {
     locales: siteConfig.langs,
-    defaultLocale: "zh",
+    defaultLocale: "es",
     routing: {
       prefixDefaultLocale: false
     },
